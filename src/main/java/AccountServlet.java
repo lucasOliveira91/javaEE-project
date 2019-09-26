@@ -9,6 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * A servlet is a web component hosted in a servlet container and generates dynamic
+ * content.
+ */
 @WebServlet(value = "/account", initParams = {
         @WebInitParam(name = "type", value = "checking")
 })
