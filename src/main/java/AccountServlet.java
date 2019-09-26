@@ -29,7 +29,7 @@ public class AccountServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletContext servletContext = req.getServletContext();
 
-
+        servletContext.setAttribute("cidade", "Brasilia");
         String tx = req.getParameter("tx");
 //        req.getRequestDispatcher("bank").forward(req, resp);
 //        resp.sendRedirect("bank");

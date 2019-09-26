@@ -10,6 +10,7 @@ public class BankServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Obtendo parametro dipacher " + req.getParameter("tx"));
 
+
         try (PrintWriter out = resp.getWriter()) {
             out.println("<html><head>");
             out.println("<title>  - - MyServlet</title>");
